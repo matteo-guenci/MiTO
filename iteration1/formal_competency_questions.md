@@ -52,6 +52,18 @@ SELECT ?mention WHERE {
 ```
 
 ## CQ 1.5
+What are all the implicit mentions of Theory1 in Article1?
+```
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
+
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:hasContent mito:Theory1 .
+  ?mention mito:mentionType "implicit" .
+}
+```
+
+## CQ 1.6
 What are all the implicit mentions in Article1?
 ```
 PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
@@ -62,7 +74,7 @@ SELECT ?mention WHERE {
 }
 ```
 
-## CQ 1.6
+## CQ 1.7
 What are all the explicit mentions in Article1?
 ```
 PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 

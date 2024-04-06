@@ -9,37 +9,9 @@ Mentions in an academic article serve as links that connect various aspects of r
 
 A mention may refer to multiple entities simultaneously, establishing a relationship between them. The nature of this relationship may vary depending on the perspective. For example, a scholar might make a critical observation about a mentioned software, while another might cite a theory in an approving manner.
 
-In summary:
+## Definition of "mention"/"to mention":
+### mention:
+ [from the Latin mentio -onis, related to mens mentis "mind, memory", and meminisse "to remember"]. – A recollection, explicit citation of a person, a thing or an event, which is made when speaking or writing: this character (or this fact) is not mentioned in the historical sources of the time; to mention someone or something, to talk about it on purpose and often with emphasis, or simply to cite its name: the bibliography does not mention the most recent contributions on the topic; the report expressly mentions the place and time; worthy of mention, deserving to be named, to be remembered: the episode is not worth mentioning; artist, poet, work worthy of mention. In particular, honorable mention or honor, a certificate of honor that is sometimes granted to those who, in a competition for prizes, in a race and the like, are judged worthy of praise but do not win the prize at stake. In legal language, no mention of the sentence, in the criminal record certificate, a benefit that can be granted by the judge when certain prerequisites expressly provided by law exist, and which has the effect of not mentioning the conviction in the criminal record certificate issued at the request of private individuals.
 
-- **Mentions of people**: When a researcher refers to the work of another researcher.
-- **Mentions of software**: When a researcher mentions software or a tool used in their research.
-- **Mentions of methodology**: When a specific methodology or approach is mentioned.
-- **Mentions of theory**: When reference is made to a particular theory or concept.
-- **Mentions of datasets**: When a specific dataset used in the research is mentioned.
-
-### Example 1: The following mentions are part of article_1:
-
-- **mention_a**: Researcher A mentions Software X
-- **mention_b**: Researcher B mentions Methodology Y
-- **mention_c**: Researcher C mentions Theory Z (without explicitly naming it)
-- **mention_d**: Researcher D mentions Dataset Q
-- **mention_e**: Researcher E mentions Researcher A and Software X
-- **mention_f**: Researcher F mentions Researcher B, Methodology Y, and Dataset Q (without explicitly naming them)
-
-**Given that:**
-
-- **mention_a** and **mention_e** are explicit mentions of Software X
-- **mention_b** and **mention_f** are explicit mentions of Methodology Y
-- **mention_c** is an implicit mention of Theory Z inferred from the context (since not explicitly named)
-- **mention_d** and **mention_f** are explicit mentions of Dataset Q
-- **mention_e** is an explicit mention of Researcher A
-- **mention_f** is an implicit mention of Researcher B inferred from the context
-
-**Then, we can infer that:**
-
-- All mentions in **article_1** explicitly mentioning Software X are: **mention_a**, **mention_e**
-- All mentions in **article_1** explicitly mentioning Methodology Y are: **mention_b**, **mention_f**
-- All mentions in **article_1** implicitly mentioning a theory are: **mention_c**
-- All mentions in **article_1** explicitly mentioning a dataset are: **mention_d**, **mention_f**
-- All mentions in **article_1** explicitly mentioning a researcher are: **mention_e**
-- All mentions in **article_1** implicitly mentioning a researcher are: **mention_f**
+### to mention:
+ [der. of mention] (I mention, etc.). – To mention a person or thing; name, remember: avoid mentioning that name in front of me. More properly, to name for a specific purpose, or with particular emphasis: the works, the places that we have mentioned; all the collaborators will be mentioned in the preface; among the poets of the twentieth century, he only mentioned Ungaretti and Montale. Past part. mentioned, also as adj.: the author now mentioned; in bureaucratic language, the same as the above-mentioned.
