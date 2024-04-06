@@ -3,118 +3,72 @@
 ## CQ_1.1
 What are all the explicit mentions of Software1 in Article1?
 ```
-PREFIX mito: <https://w3id.org/irnerio/data/memo/> 
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/> 
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
 
-SELECT ?gloss
-
-WHERE {
-
-  ?gloss a memo:Gloss .
-  ?gloss ^memo:hasPart ex:manuscript_1
-  
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:hasContent mito:Software1 .
+  ?mention mito:mentionType "explicit" .
 }
 ```
 
 ## CQ_1.2
-Return all the first-level glosses that are part of `ex:manuscript_1` and cite `ex:text_1`.
-
+What are all the explicit mentions of Methodology1 in Article1
 ```
-PREFIX ex: <https://w3id.org/irnerio/data/memo/> 
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/> 
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
 
-SELECT ?gloss
 
-WHERE {
-
-  ?gloss a memo:Gloss .
-  ?gloss ^memo:hasPart ex:manuscript_1 .
-  ?gloss memo:cites ex:text_1
-  
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:hasContent mito:Methodology1 .
+  ?mention mito:mentionType "explicit" .
 }
 ```
 
 ## CQ_1.3
-Return all the second-level glosses that are part of `ex:manuscript_1` and that annotate or cite `ex:text_1`.
+What are all the explicit mentions of Dataset1 in Article1?
 
 ```
-PREFIX ex: <https://w3id.org/irnerio/data/memo/> 
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/> 
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
 
-SELECT ?gloss
-
-WHERE {
-
-  ?gloss a memo:Gloss .
-  ?gloss ^memo:hasPart ex:manuscript_1 .
-  ?gloss (memo:annotates|memo:cites) / (memo:annotates|memo:cites) ex:text_1
-  
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:hasContent mito:Dataset1 .
+  ?mention mito:mentionType "explicit" .
 }
 ```
 
 ## CQ_1.4
-Return all the second-level glosses that are part of `ex:manuscript_1` and that annotate or refer to `ex:gloss_a`.
-
+What are all the implicit mentions of Person1 in Article1?
 ```
-PREFIX ex: <https://w3id.org/irnerio/data/memo/>
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/>
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
 
-SELECT ?gloss
 
-WHERE {
-
-  ?gloss a memo:Gloss .
-  ?gloss ^memo:hasPart ex:manuscript_1 .
-  ?gloss (memo:annotates|memo:refersTo) / (memo:annotates|memo:refersTo) ex:gloss_a
-  
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:hasContent mito:Person1 .
+  ?mention mito:mentionType "implicit" .
 }
 ```
 
-## CQ_1.5
-Return all the second-level glosses that annotate or cite `ex:text_1`.
-
+## CQ 1.5
+What are all the implicit mentions in Article1?
 ```
-PREFIX ex: <https://w3id.org/irnerio/data/memo/> 
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/> 
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
 
-SELECT ?gloss
-
-WHERE {
-
-  ?gloss a memo:Gloss .
-  ?gloss (memo:annotates|memo:cites) / (memo:annotates|memo:cites) ex:text_1
-  
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:mentionType "implicit" .
 }
 ```
 
-## CQ_1.6
-Return all the third-level glosses that annotate `ex:gloss_b`.
-
+## CQ 1.6
+What are all the explicit mentions in Article1?
 ```
-PREFIX ex: <https://w3id.org/irnerio/data/memo/> 
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/> 
+PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
 
-SELECT ?gloss
-
-WHERE {
-
-  ?gloss a memo:Gloss .
-  ?gloss memo:annotates / memo:annotates / memo:annotates ex:gloss_b
-  
-}
-```
-
-## CQ_1.7
-Return all the glosses that cite a manuscript.
-
-```
-PREFIX ex: <https://w3id.org/irnerio/data/memo/> 
-PREFIX memo: <https://w3id.org/irnerio/ontology/memo/> 
-
-SELECT ?gloss
-WHERE {
-  ?gloss a memo:Gloss .
-  ?manuscript a memo:Manuscript .
-  ?gloss memo:cites ?manuscript
+SELECT ?mention WHERE {
+  mito:Article1 mito:mentions ?mention .
+  ?mention mito:mentionType "explicit" .
 }
 ```
