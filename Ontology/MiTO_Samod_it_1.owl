@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#"
+     xml:base="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:mito="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#hasContent">
+        <rdfs:comment xml:lang="en">This property links two entities that share a part-whole relation with each other.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#isIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#isIn">
+        <rdfs:comment xml:lang="en">This property denotes the presence of the domain in what is formalized by the range</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#mentions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#mentions">
+        <rdfs:comment xml:lang="en">The mentioning entity mentions the mentioned entity, either directly and explicitly (when the mention is clearly stated: &quot;... those reasons brought me to think that the best soulution could be the application of SoftwareX ...&quot;), indirectly (e.g.  when a publication mentions a method or algorithm without explicitly naming the software that implements it), or implicitly (e.g.when a publication uses certain terminology or conventions that are specific to a software without directly mentioning the software).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#mentionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#mentionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A data property that aims to define the implicit or explicit character of the mention it is describing</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article">
+        <rdfs:comment xml:lang="en">The realization of a piece of writing on a particular topic, usually published within a periodical publication (e.g. journal, magazine and newspaper).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention">
+        <rdfs:comment xml:lang="en">Originally: the action of calling to mind or commemorating something in speech or writing. Subsequently in more restricted sense: the action or an act of referring to, remarking upon, or introducing the name of a person or thing in spoken or written discourse, often incidentally and as not necessarily essential to the discussion.
+Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person">
+        <rdfs:comment xml:lang="en">An individual. The entity defined as person encompasses individuals that are deceased as well as those that are living.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Thing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Thing">
+        <rdfs:comment xml:lang="en">This class identify simply everything that could be mentioned that is not a Person (e.g. Softwares, Datasets, Workflows, Methodologies...)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article"/>
+        <mentions rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Dataset1"/>
+        <mentions rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Methodology1"/>
+        <mentions rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person1"/>
+        <mentions rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Software1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Dataset1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Dataset1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention"/>
+        <hasContent rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Dataset1"/>
+        <isIn rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention"/>
+        <hasContent rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Methodology1"/>
+        <isIn rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention"/>
+        <hasContent rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Software1"/>
+        <isIn rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Mention"/>
+        <hasContent rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person1"/>
+        <isIn rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Article1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Methodology1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Methodology1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Thing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Software1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Software1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mguen/ontologies/2024/1/MiTO#Thing"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
