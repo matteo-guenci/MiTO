@@ -7,7 +7,7 @@ PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/Mi
 
 SELECT ?mention WHERE {
   mito:Article1 mito:mentions ?mention .
-  ?mention mito:hasContent mito:Software1 .
+  ?mention mito:hasPart mito:Software1 .
   ?mention mito:mentionType "explicit" .
 }
 ```
@@ -20,7 +20,7 @@ PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/Mi
 
 SELECT ?mention WHERE {
   mito:Article1 mito:mentions ?mention .
-  ?mention mito:hasContent mito:Methodology1 .
+  ?mention mito:hasPart mito:Methodology1 .
   ?mention mito:mentionType "explicit" .
 }
 ```
@@ -33,7 +33,7 @@ PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/Mi
 
 SELECT ?mention WHERE {
   mito:Article1 mito:mentions ?mention .
-  ?mention mito:hasContent mito:Dataset1 .
+  ?mention mito:hasPart mito:Dataset1 .
   ?mention mito:mentionType "explicit" .
 }
 ```
@@ -46,7 +46,7 @@ PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/Mi
 
 SELECT ?mention WHERE {
   mito:Article1 mito:mentions ?mention .
-  ?mention mito:hasContent mito:Person1 .
+  ?mention mito:hasPart mito:Person1 .
   ?mention mito:mentionType "implicit" .
 }
 ```
@@ -58,7 +58,7 @@ PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/Mi
 
 SELECT ?mention WHERE {
   mito:Article1 mito:mentions ?mention .
-  ?mention mito:hasContent mito:Theory1 .
+  ?mention mito:hasPart mito:Theory1 .
   ?mention mito:mentionType "implicit" .
 }
 ```

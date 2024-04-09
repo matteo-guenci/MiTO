@@ -44,7 +44,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention1">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <hasContent rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
+        <hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
         <isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     
@@ -54,7 +54,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention2">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <hasContent rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
+        <hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
         <isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     
@@ -64,7 +64,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention3">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <hasContent rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Software1"/>
+        <hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Software1"/>
         <isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     
@@ -74,7 +74,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention4">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <hasContent rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Person1"/>
+        <hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Person1"/>
         <isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     

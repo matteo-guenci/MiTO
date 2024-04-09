@@ -20,9 +20,9 @@
     
 
 
-    <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#hasContent -->
+    <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#hasPart -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#hasContent">
+    <owl:ObjectProperty rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#hasPart">
         <rdfs:comment xml:lang="en">This property links two entities that share a part-whole relation with each other.</rdfs:comment>
     </owl:ObjectProperty>
     
