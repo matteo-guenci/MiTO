@@ -6,10 +6,9 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:mito="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:MiTO_Samod_it_1="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#">
-    <owl:Ontology rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#"/>
+     xmlns:mito="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl"/>
     
 
 
@@ -98,9 +97,9 @@
     
 
 
-    <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article -->
+    <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article -->
 
-    <owl:Class rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article">
+    <owl:Class rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article">
         <rdfs:comment xml:lang="en">The realization of a piece of writing on a particular topic, usually published within a periodical publication (e.g. journal, magazine and newspaper).</rdfs:comment>
     </owl:Class>
     
@@ -145,11 +144,11 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
     <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1">
-        <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article"/>
-        <MiTO_Samod_it_1:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
-        <MiTO_Samod_it_1:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
-        <MiTO_Samod_it_1:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Person1"/>
-        <MiTO_Samod_it_1:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Software1"/>
+        <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article"/>
+        <mito:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
+        <mito:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
+        <mito:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Person1"/>
+        <mito:mentions rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Software1"/>
     </owl:NamedIndividual>
     
 
@@ -166,9 +165,9 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention1">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
-        <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
-        <MiTO_Samod_it_1:mentionType xml:lang="en">&quot;explicit&quot;</MiTO_Samod_it_1:mentionType>
+        <mito:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
+        <mito:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <mito:mentionType xml:lang="en">&quot;explicit&quot;</mito:mentionType>
     </owl:NamedIndividual>
     
 
@@ -177,8 +176,8 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention2">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
-        <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <mito:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
+        <mito:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     
 
@@ -187,9 +186,9 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention3">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Software1"/>
-        <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
-        <MiTO_Samod_it_1:mentionType>&quot;explicit&quot;</MiTO_Samod_it_1:mentionType>
+        <mito:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Software1"/>
+        <mito:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <mito:mentionType>&quot;explicit&quot;</mito:mentionType>
     </owl:NamedIndividual>
     
 
@@ -198,8 +197,8 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention4">
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
-        <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Person1"/>
-        <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <mito:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Person1"/>
+        <mito:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     
 
@@ -207,8 +206,8 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
     <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention5 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention5">
-        <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Theory1"/>
-        <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <mito:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Theory1"/>
+        <mito:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
     </owl:NamedIndividual>
     
 
