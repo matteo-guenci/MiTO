@@ -44,6 +44,7 @@
     <!-- https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#hasPart -->
 
     <owl:ObjectProperty rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#hasPart">
+        <rdfs:domain rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
         <rdfs:comment xml:lang="en">This property links two entities that share a part-whole relation with each other.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -167,6 +168,7 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
         <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
         <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <MiTO_Samod_it_1:mentionType xml:lang="en">&quot;explicit&quot;</MiTO_Samod_it_1:mentionType>
     </owl:NamedIndividual>
     
 
@@ -187,6 +189,7 @@ Stated by https://www.oed.com/dictionary/mention_n?tl=true</rdfs:comment>
         <rdf:type rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Mention"/>
         <MiTO_Samod_it_1:hasPart rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Software1"/>
         <MiTO_Samod_it_1:isIn rdf:resource="https://github.com/matteo-guenci/MiTO/blob/main/MiTO_Ontology/MiTO_Samod_it_1.owl#Article1"/>
+        <MiTO_Samod_it_1:mentionType>&quot;explicit&quot;</MiTO_Samod_it_1:mentionType>
     </owl:NamedIndividual>
     
 
