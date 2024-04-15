@@ -5,6 +5,10 @@ Mentions in accademic paper
 
 In an academic context, a "mention" is a reference made to an entity such as a researcher, a software, a methodology, a theory, or a dataset, within an article. These mentions can be either explicit, where the mentioned entity is clearly indicated, or implicit, where the mentioned entity is deduced from the context.
 
+To provide an example about the different characteristic of those two types of mentions:
+- An explicit mention could be something like "Dr. Johnson's groundbreaking research on climate change" where the researcher is clearly named within the text itself. 
+- An implicit mention might be more indirect, such as discussing "seminal studies in the field" without naming specific researchers, assuming the reader knows which studies are being referred to.
+
 Mentions in an academic article serve as links that connect various aspects of research. Each mention, whether it refers to a researcher, software, methodology, theory, or dataset, contributes to creating a network of knowledge.
 
 A mention may refer to multiple entities simultaneously, establishing a relationship between them. The nature of this relationship may vary depending on the perspective. For example, a scholar might make a critical observation about a mentioned software, while another might cite a theory in an approving manner.
