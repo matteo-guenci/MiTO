@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#"
-     xml:base="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#"
+     xml:base="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:mito="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl"/>
-<!-- 
+     xmlns:frbr="http://purl.org/vocab/frbr/core#"
+     xmlns:mito="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:fabio="http://purl.org/spar/fabio/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl">
+        <dc:creator>Matteo Guenci</dc:creator>
+        <rdfs:comment xml:lang="en">This ontology is to be intended as an extension of the CiTO ontology, its aim is to include and formalize the concept of &quot;mention&quot;.</rdfs:comment>
+    </owl:Ontology>
+  <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -25,7 +30,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#hasMentionType">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#MentionType"/>
-        <rdfs:comment xml:lang="en">A data property that aims to define the implicit or explicit character of the mention it is describing</rdfs:comment>
+        <rdfs:comment xml:lang="en">A property that aims to define the implicit or explicit character of the mention it is describing</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -60,7 +65,7 @@
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#mentions -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#mentions">
-        <rdfs:comment xml:lang="en">The mentioning entity mentions the mentioned entity, either directly and explicitly (when the mention is clearly stated: &quot;... those reasons brought me to think that the best soulution could be the application of SoftwareX ...&quot;), indirectly (e.g.  when a publication mentions a method or algorithm without explicitly naming the software that implements it), or implicitly (e.g.when a publication uses certain terminology or conventions that are specific to a software without directly mentioning the software).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A property that connect the two sides involved in the act of mentioning</rdfs:comment>
     </owl:ObjectProperty>
     
 
