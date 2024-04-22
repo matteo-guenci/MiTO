@@ -22,6 +22,7 @@ Mention2: Explicit, mentions Methodology1
 Mention3: Explicit, mentions Software1
 Mention4: Implicit, mentions Person1
 Mention5: Implicit, mentions Theory1
+
 Given that:
 
 Mention1 mentions Dataset1;

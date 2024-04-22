@@ -14,7 +14,7 @@
         <dc:creator>Matteo Guenci</dc:creator>
         <rdfs:comment xml:lang="en">This ontology is to be intended as an extension of the CiTO ontology, its aim is to include and formalize the concept of &quot;mention&quot;.</rdfs:comment>
     </owl:Ontology>
-<!-- 
+   <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -27,21 +27,23 @@
 
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1">
-        <rdf:type rdf:resource="http://purl.org/spar/fabio/Article"/>
+    <owl:Thing rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <mentions rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Dataset1"/>
         <mentions rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Methodology1"/>
         <mentions rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Person1"/>
         <mentions rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Software1"/>
-    </owl:NamedIndividual>
+        <mentions rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Theory1"/>
+    </owl:Thing>
     
 
 
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Dataset1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Dataset1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Thing"/>
-    </owl:NamedIndividual>
+    <owl:Thing rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Dataset1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <isMentionedBy rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
+    </owl:Thing>
     
 
 
@@ -108,6 +110,7 @@
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention5 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention5">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Mention"/>
         <hasMentionType rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#ImplicitMention"/>
         <hasMentionedEntity rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Theory1"/>
         <hasMentioningEntity rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
@@ -117,31 +120,35 @@
 
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Methodology1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Methodology1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Thing"/>
-    </owl:NamedIndividual>
+    <owl:Thing rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Methodology1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <isMentionedBy rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
+    </owl:Thing>
     
 
 
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Person1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Person1">
-        <rdf:type rdf:resource="http://purl.org/vocab/frbr/core#Person"/>
-    </owl:NamedIndividual>
+    <owl:Thing rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Person1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <isMentionedBy rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
+    </owl:Thing>
     
 
 
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Software1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Software1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Thing"/>
-    </owl:NamedIndividual>
+    <owl:Thing rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Software1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <isMentionedBy rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
+    </owl:Thing>
     
 
 
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Theory1 -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Theory1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Thing"/>
-    </owl:NamedIndividual>
+    <owl:Thing rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Theory1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <isMentionedBy rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#Article1"/>
+    </owl:Thing>
 </rdf:RDF>

@@ -91,3 +91,13 @@ WHERE {
   ?mention mito:hasMentioningEntity mito:Article1 .
 }
 ```
+
+## CQ 1.8
+Who and what is mentioned by Article 1?
+
+PREFIX mito: <https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#> 
+
+SELECT ?thing
+WHERE {
+	?thing mito:isMentionedBy mito:Article1.
+	}
