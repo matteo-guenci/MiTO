@@ -15,51 +15,51 @@ A mention may refer to multiple entities simultaneously, establishing a relation
 
 Example:
 
-Let's consider a set of articles spanning from "Article1" to "Article5" and the following mentions that they contain:
+Let's consider a set of articles spanning from "article-1" to "article-5" and the following mentions that they contain:
 
-Mention1: Explicit, mentions Dataset1
-Mention2: Explicit, mentions Methodology1
-Mention3: Explicit, mentions Software1
-Mention4: Implicit, mentions Person1
-Mention5: Implicit, mentions Theory1
-Mention6: Explicit, mentions Dataset1 and Dataset2 (Article2)
-Mention7: Implicit, mentions Person1 and Person2 (Article3)
-Mention8: Explicit, mentions Software1 and Software2 (Article2 and Article3)
-Mention9: Implicit, mentions Theory1, Theory2, and Theory3 (Article2, Article3 and Article4)
-Mention10: Explicit, mentions Methodology1 and Methodology2 (Article3 and Article 5)
-Mention11: Implicit, mentions Person1, Person2, and Person3 (Article2 and Article3)
-Mention12: Explicit, mentions Dataset3 and Methodology1 (Article4 and Article5)
+Mention1: Explicit, mentions dataset-1
+Mention2: Explicit, mentions methodology-1
+Mention3: Explicit, mentions software-1
+Mention4: Implicit, mentions person-1
+Mention5: Implicit, mentions theory-1
+Mention6: Explicit, mentions dataset-1 and dataset-2 (article-2)
+Mention7: Implicit, mentions person-1 and person-2 (article-3)
+Mention8: Explicit, mentions software-1 and software-2 (article-2 and article-3)
+Mention9: Implicit, mentions theory-1, theory-2, and theory-3 (article-2, article-3 and article-4)
+Mention10: Explicit, mentions methodology-1 and methodology-2 (article-3 and article- 5)
+Mention11: Implicit, mentions person-1, person-2, and person-3 (article-2 and article-3)
+Mention12: Explicit, mentions dataset-3 and methodology-1 (article-4 and article-5)
 
 
 Given that:
 
-Mention1 mentions Dataset1;
-Mention2 mentions Methodology1;
-Mention3 mentions Software1;
-Mention4 mentions Person1;
-Mention5 mentions Theory1;
-Mention6 mentions Dataset1 and Dataset2 
-Mention7 mentions Person1 and Person2
-Mention8 mentions Software1 and Software2
-Mention9 mentions Theory1, Theory2 and Theory3
-Mention10 mentions Methodology1 and Methodology2
-Mention11 mentions Person1, Person2 and Person3
-Mention12 mentions Dataset3 and Methodology1
+Mention1 mentions dataset-1;
+Mention2 mentions methodology-1;
+Mention3 mentions software-1;
+Mention4 mentions person-1;
+Mention5 mentions theory-1;
+Mention6 mentions dataset-1 and dataset-2 
+Mention7 mentions person-1 and person-2
+Mention8 mentions software-1 and software-2
+Mention9 mentions theory-1, theory-2 and theory-3
+Mention10 mentions methodology-1 and methodology-2
+Mention11 mentions person-1, person-2 and person-3
+Mention12 mentions dataset-3 and methodology-1
 
 Then:
 
-All mentions that are part of Article1 and mention Dataset1 are: Mention1
-All mentions in Article1 that mentions Methodology1 are: Mention2
-All mentions in Article1 that mentions Software1 are: Mention3
-All mentions in Article1 that mentions Person1 are: Mention4 
-All mentions in Article1 that mentions Theory1 are: Mention5
-All mentions that are part of Article1 and Article2 and mention Dataset1 are: Mention6
-All mentions in Article1 and Article3 that mention Person1 are: Mention7
-All mentions that are part of Article2 and Article3 and mention Software1 are: Mention8
-All mentions in Article1, Article2, and Article3 that mention Theory1 are: Mention9
-All mentions that are part of Article1 and Article2 and mention Methodology1 are: Mention10
-All mentions in Article1, Article2, and Article3 that mention Person1 are: Mention11
-All mentions that are part of Article4 and Article5 and mention Dataset3 are: Mention12
+All mentions that are part of article-1 and mention dataset-1 are: Mention1
+All mentions in article-1 that mentions methodology-1 are: Mention2
+All mentions in article-1 that mentions software-1 are: Mention3
+All mentions in article-1 that mentions person-1 are: Mention4 
+All mentions in article-1 that mentions theory-1 are: Mention5
+All mentions that are part of article-1 and article-2 and mention dataset-1 are: Mention6
+All mentions in article-1 and article-3 that mention person-1 are: Mention7
+All mentions that are part of article-2 and article-3 and mention software-1 are: Mention8
+All mentions in article-1, article-2, and article-3 that mention theory-1 are: Mention9
+All mentions that are part of article-1 and article-2 and mention methodology-1 are: Mention10
+All mentions in article-1, article-2, and article-3 that mention person-1 are: Mention11
+All mentions that are part of article-4 and article-5 and mention dataset-3 are: Mention12
 
 
 ## Definition of "mention"/"to mention":
