@@ -49,27 +49,16 @@ Mention12 mentions Dataset3 and Methodology1
 Then:
 
 All mentions that are part of Article1 and mention Dataset1 are: Mention1
-
 All mentions in Article1 that mentions Methodology1 are: Mention2
-
 All mentions in Article1 that mentions Software1 are: Mention3
-
 All mentions in Article1 that mentions Person1 are: Mention4 
-
 All mentions in Article1 that mentions Theory1 are: Mention5
-
 All mentions that are part of Article1 and Article2 and mention Dataset1 are: Mention6
-
 All mentions in Article1 and Article3 that mention Person1 are: Mention7
-
 All mentions that are part of Article2 and Article3 and mention Software1 are: Mention8
-
 All mentions in Article1, Article2, and Article3 that mention Theory1 are: Mention9
-
 All mentions that are part of Article1 and Article2 and mention Methodology1 are: Mention10
-
 All mentions in Article1, Article2, and Article3 that mention Person1 are: Mention11
-
 All mentions that are part of Article4 and Article5 and mention Dataset3 are: Mention12
 
 
