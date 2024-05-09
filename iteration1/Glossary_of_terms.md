@@ -10,4 +10,3 @@
 |`mentions`| A property that connect the two sides involved in the act of mentioning|
 |`hasMentionType`| An object property that aims to define the implicit or explicit character of the mention it is describing|
 |`isMentionedBy`| An object property that configures itself as the conceptual inverse of mentions.|
-

@@ -56,6 +56,7 @@
     <!-- https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#isMentionedBy -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#isMentionedBy">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/MiTO_Samod_it_1.owl#mentions"/>
         <rdfs:comment xml:lang="en">A property that connect the two sides involved in the act of mentioning</rdfs:comment>
     </owl:ObjectProperty>
     

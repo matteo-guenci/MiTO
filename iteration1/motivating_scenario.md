@@ -7,7 +7,7 @@ In an academic context, a "mention" is a reference made to an entity such as a r
 
 To provide an example about the different characteristic of those two types of mentions:
 - An explicit mention could be something like "Dr. Johnson's groundbreaking research on climate change" where the researcher is clearly named within the text itself. 
-- An implicit mention might be more indirect, such as discussing "seminal studies in the field" without naming specific researchers, assuming the reader knows which studies are being referred to.
+- An implicit mention might be more indirect, such as discussing "seminal studies in the field" without naming specific researchers, assuming the reader knows which studies are being referred to, either because it's implied or because they have been already mentioned before in the text.
 
 Mentions in an academic article serve as links that connect various aspects of research. Each mention, whether it refers to a researcher, software, methodology, theory, or dataset, contributes to creating a network of knowledge.
 
@@ -15,13 +15,21 @@ A mention may refer to multiple entities simultaneously, establishing a relation
 
 Example:
 
-Let's consider the article "Article1" and the following mentions:
+Let's consider a set of articles spanning from "Article1" to "Article5" and the following mentions that they contain:
 
 Mention1: Explicit, mentions Dataset1
 Mention2: Explicit, mentions Methodology1
 Mention3: Explicit, mentions Software1
 Mention4: Implicit, mentions Person1
 Mention5: Implicit, mentions Theory1
+Mention6: Explicit, mentions Dataset1 and Dataset2 (Article1 and Article2)
+Mention7: Implicit, mentions Person1 and Person2 (Article1 and Article3)
+Mention8: Explicit, mentions Software1 and Software2 (Article2 and Article3)
+Mention9: Implicit, mentions Theory1, Theory2, and Theory3 (Article1, Article2, and Article3)
+Mention10: Explicit, mentions Methodology1 and Methodology2 (Article1 and Article2)
+Mention11: Implicit, mentions Person1, Person2, and Person3 (Article1, Article2, and Article3)
+Mention12: Explicit, mentions Dataset3 and Methodology1 (Article4 and Article5)
+
 
 Given that:
 
@@ -30,17 +38,64 @@ Mention2 mentions Methodology1;
 Mention3 mentions Software1;
 Mention4 mentions Person1;
 Mention5 mentions Theory1;
+Mention6 mentions Dataset1 and Dataset2 
+Mention7 mentions Person1 and Person2
+Mention8 mentions Software1 and Software2
+Mention9 mentions Theory1, Theory2, and Theory3
+Mention10 mentions Methodology1 and Methodology2
+Mention11 mentions Person1, Person2, and Person3
+Mention12 mentions Dataset3 and Methodology1
+
 Then:
 
 All mentions that are part of Article1 and mention Dataset1 are:
 
 Mention1
 
+All mentions in Article1 that mentions Methodology1 are:
+
+Mention2
+
 All mentions in Article1 that mentions Software1 are:
 
 Mention3
 
-...
+All mentions in Article1 that mentions Person1 are:
+
+Mention4 
+
+All mentions in Article1 that mentions Theory1 are:
+
+Mention5
+
+All mentions that are part of Article1 and Article2 and mention Dataset1 are: 
+
+Mention6
+
+All mentions in Article1 and Article3 that mention Person1 are: 
+
+Mention7
+
+All mentions that are part of Article2 and Article3 and mention Software1 are: 
+
+Mention8
+
+All mentions in Article1, Article2, and Article3 that mention Theory1 are: 
+
+Mention9
+
+All mentions that are part of Article1 and Article2 and mention Methodology1 are: 
+
+Mention10
+
+All mentions in Article1, Article2, and Article3 that mention Person1 are: 
+
+Mention11
+
+All mentions that are part of Article4 and Article5 and mention Dataset3 are: 
+
+Mention12
+
 
 ## Definition of "mention"/"to mention":
 ### mention:
