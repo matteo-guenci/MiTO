@@ -3,7 +3,7 @@
 ## CQ_1
 What are all the explicit mentions of software-1 in article-1?
 ```
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -16,7 +16,7 @@ WHERE {
 ## CQ_2
 What are all the explicit mentions of methodology-1 in article-1
 ```
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -30,7 +30,7 @@ WHERE {
 What are all the explicit mentions of dataset-1 in article-1?
 
 ```
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -43,7 +43,7 @@ WHERE {
 ## CQ_4
 What are all the implicit mentions of person-1 in article-1?
 ```
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -56,7 +56,7 @@ WHERE {
 ## CQ_5
 What are all the implicit mentions of theory-1 in article-1?
 ```
-PREFIX mito: <https://github.com/matteo-guenci/MiTO/blob/main/MiTO%20Ontology/MiTO_Samod_it_1.owl> 
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -69,7 +69,7 @@ WHERE {
 ## CQ_6
 What are all the implicit mentions in article-1?
 ```
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -81,7 +81,7 @@ WHERE {
 ## CQ_7
 What are all the explicit mentions in article-1?
 ```
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -93,7 +93,7 @@ WHERE {
 ## CQ_8
 Who and what is mentioned by article-1?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?thing
 WHERE {
@@ -104,7 +104,7 @@ WHERE {
 What are all the explicit mentions of dataset-3 in article-4 and article-5?
 
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -116,7 +116,7 @@ WHERE {
 
 ALTERNATIVELY (if "article-4 or article-5" is required as clause)
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT DISTINCT ?mention
 WHERE {
@@ -133,7 +133,7 @@ WHERE {
 ## CQ_10
 What are all the explicit mentions of methodology-1 in article-4 and article-5?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT DISTINCT ?mention
 WHERE {
@@ -149,7 +149,7 @@ WHERE {
 ## CQ_11
 What are all the mentions in article-4 and article-5 that mention dataset-3 and methodology-1?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -165,7 +165,7 @@ WHERE {
 ## CQ_12
 Who and what is mentioned by article-4 and article-5?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?thing
 WHERE {
@@ -173,7 +173,7 @@ WHERE {
   ?thing mito:isMentionedBy mito:article-5.
 	}
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT DISTINCT ?thing
 WHERE {
@@ -183,7 +183,7 @@ WHERE {
 }
 
 ALTERNATIVELY (same logic as before "or" instad of "and")
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT DISTINCT ?thing
 WHERE {
@@ -195,7 +195,7 @@ WHERE {
 
 ## CQ_13
 What are all the mentions in article-4 that mention dataset-3?
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -206,7 +206,7 @@ WHERE {
 ## CQ_14
 What are all the mentions in article-5 that mention methodology-1?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -217,7 +217,7 @@ WHERE {
 ## CQ_15
 What are all the explicit mentions in article-4 and article-5?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT ?mention
 WHERE {
@@ -229,7 +229,7 @@ WHERE {
 # CQ_16
 Which article- does mention software-2 or theory-3?
 
-PREFIX mito <http://purl.org/spar/mito#>
+PREFIX mito: <http://purl.org/spar/mito#>
 
 SELECT DISTINCT ?article
 WHERE {
