@@ -25,9 +25,9 @@ Mention5: Implicit, mentions Theory1
 Mention6: Explicit, mentions Dataset1 and Dataset2 (Article2)
 Mention7: Implicit, mentions Person1 and Person2 (Article3)
 Mention8: Explicit, mentions Software1 and Software2 (Article2 and Article3)
-Mention9: Implicit, mentions Theory1, Theory2, and Theory3 (Article2, and Article3, Article4)
+Mention9: Implicit, mentions Theory1, Theory2, and Theory3 (Article2, Article3 and Article4)
 Mention10: Explicit, mentions Methodology1 and Methodology2 (Article3 and Article 5)
-Mention11: Implicit, mentions Person1, Person2, and Person3 (Article2, and Article3)
+Mention11: Implicit, mentions Person1, Person2, and Person3 (Article2 and Article3)
 Mention12: Explicit, mentions Dataset3 and Methodology1 (Article4 and Article5)
 
 
@@ -41,9 +41,9 @@ Mention5 mentions Theory1;
 Mention6 mentions Dataset1 and Dataset2 
 Mention7 mentions Person1 and Person2
 Mention8 mentions Software1 and Software2
-Mention9 mentions Theory1, Theory2, and Theory3
+Mention9 mentions Theory1, Theory2 and Theory3
 Mention10 mentions Methodology1 and Methodology2
-Mention11 mentions Person1, Person2, and Person3
+Mention11 mentions Person1, Person2 and Person3
 Mention12 mentions Dataset3 and Methodology1
 
 Then:
