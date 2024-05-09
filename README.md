@@ -11,5 +11,3 @@ MiTO, the Mention Typing Ontology, is an ontology written in OWL 2 DL. Its aim i
 **License:** [This work is distributed under a Creative Commons Attribution 4.0 International] https://creativecommons.org/licenses/by/4.0/legalcode)
 
 **Website:** http://www.sparontologies.net/ontologies/mito
-
-**Cite as:** <bibliographic reference entry, including a DOI link + OA link>
