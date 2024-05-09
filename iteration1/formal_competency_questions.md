@@ -200,7 +200,7 @@ PREFIX mito: <http://purl.org/spar/mito#>
 SELECT ?mention
 WHERE {
   ?mention mito:hasMentionedEntity mito:dataset-3.
-  ?mention mito:hasMentioningEntity miti:article-4.
+  ?mention mito:hasMentioningEntity mito:article-4.
 }
 
 ## CQ_14
