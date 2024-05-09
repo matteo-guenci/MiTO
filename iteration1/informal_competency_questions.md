@@ -15,4 +15,4 @@
 - **Competency Question 13**: What are all the mentions in Article4 that mention Dataset3?
 - **Competency Question 14**: What are all the mentions in Article5 that mention Methodology1?
 - **Competency Question 15**: What are all the explicit mentions in Article4 and Article5?
-- **Competency Question 16**: Who and what is mentioned explicitly in Article4 and Article5?
+- **Competency Question 16**: Which article mentions Software2 or Theory3?
