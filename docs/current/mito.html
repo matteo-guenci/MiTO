@@ -6,9 +6,7 @@
 			jQuery(".markdown").each(function(el){
 			jQuery(this).after(marked(jQuery(this).text())).remove()});
 			var list =
-			$('a[name="
-			https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/mito.owl
-			"]');
+			$('a[name="https://raw.githubusercontent.com/matteo-guenci/MiTO/main/MiTO%20Ontology/mito.owl"]');
 			if (list.size() != 0) {
 			var element = list.first();
 			$.scrollTo(element);
