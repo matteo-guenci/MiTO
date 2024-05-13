@@ -4,9 +4,9 @@ MiTO, the Mention Typing Ontology, is an ontology written in OWL 2 DL. Its aim i
 
 **URL:** http://purl.org/spar/mito
 
-**Creators**: [Matteo Guenci](https://github.com/matteo-guenci), ORCID (https://orcid.org/0009-0006-3139-1667)
+**Creators**: [Matteo Guenci]([https://github.com/matteo-guenci](https://orcid.org/0009-0006-3139-1667))
 
-**Contributors:** [<contributor full name>](<contributor URL - pref. ORCID>), ...
+**Contributors:** [Silivo Peroni]([https://orcid.org/0000-0003-0530-4305](https://github.com/essepuntato))
 
 **License:** [This work is distributed under a Creative Commons Attribution 4.0 International] https://creativecommons.org/licenses/by/4.0/legalcode)
 
