@@ -12,6 +12,7 @@
      xmlns:fabio="http://purl.org/spar/fabio/">
     <owl:Ontology rdf:about="http://purl.org/spar/mito">
         <owl:versionIRI rdf:resource="http://purl.org/spar/mito/2024-05-09"/>
+        <dc:contributor>Silivo Peroni (https://orcid.org/0000-0003-0530-4305)</dc:contributor>
         <dc:creator>Matteo Guenci (https://orcid.org/0009-0006-3139-1667)</dc:creator>
         <dc:date>2024-05-09</dc:date>
         <dc:description xml:lang="en">MiTO, the Mention Typing Ontology, is an ontology written in OWL 2 DL. Its aim is to enable the formalization of the concept of mentions.  
@@ -34,6 +35,12 @@ MiTO contains the object property mito:mentions and its inverse mito:isMentioned
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
